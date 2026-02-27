@@ -1,9 +1,10 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { School, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const links = [
     { href: "/", label: "Inicio" },
@@ -27,9 +28,13 @@ export default function Navbar() {
                         href="/"
                         className="flex items-center gap-3 group"
                     >
-                        <div className="w-10 h-10 rounded-lg theme-bg-primary flex items-center justify-center text-white shadow-md group-hover:scale-105 transition">
-                            <School className="w-6 h-6" />
-                        </div>
+                        <Image
+                            src="/monteverde.png"
+                            width={50}
+                            height={50}
+                            alt="Logo Colegio Monte Verde"
+                            className="object-contain group-hover:scale-105 transition"
+                        />
                         <div className="leading-tight">
                             <h1 className="font-bold text-gray-900 text-lg uppercase tracking-wide">
                                 Monte Verde
@@ -52,12 +57,14 @@ export default function Navbar() {
                                 {link.label}
                             </Link>
                         ))}
-                        <Link
-                            href="/admision"
+                        <a
+                            href="https://wa.me/56963943314?text=Hola,%20consulta%20general"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="ml-4 px-5 py-2 rounded-full text-white text-sm font-medium shadow-md hover:shadow-lg transform hover:-translate-y-0.5 theme-btn"
                         >
                             Contacto
-                        </Link>
+                        </a>
                     </div>
 
                     {/* Mobile toggle */}

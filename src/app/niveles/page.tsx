@@ -10,7 +10,7 @@ export default function NivelesPage() {
                 {/* Educación Parvularia */}
                 <div className="flex flex-col md:flex-row gap-12 items-center">
                     <div className="md:w-1/2 relative">
-                        <div className="absolute top-4 left-4 w-full h-full bg-pink-100 rounded-2xl -z-10" />
+                        <div className="absolute top-4 left-4 w-full h-full bg-institutional/20 rounded-2xl -z-10" />
                         <img
                             src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?auto=format&fit=crop&q=80&w=800"
                             className="rounded-2xl shadow-xl w-full object-cover h-[350px]"
@@ -19,7 +19,7 @@ export default function NivelesPage() {
                     </div>
                     <div className="md:w-1/2">
                         <div className="flex items-center gap-3 mb-4">
-                            <Heart className="w-8 h-8 text-pink-500" />
+                            <Heart className="w-8 h-8 text-institutional" />
                             <h3 className="text-3xl font-bold text-gray-800">
                                 Educación Parvularia
                             </h3>
@@ -37,7 +37,7 @@ export default function NivelesPage() {
                 {/* Enseñanza Básica */}
                 <div className="flex flex-col md:flex-row gap-12 items-center">
                     <div className="md:w-1/2 md:order-2 relative">
-                        <div className="absolute top-4 -right-4 w-full h-full bg-blue-100 rounded-2xl -z-10" />
+                        <div className="absolute top-4 -right-4 w-full h-full bg-institutional/20 rounded-2xl -z-10" />
                         <img
                             src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&q=80&w=800"
                             className="rounded-2xl shadow-xl w-full object-cover h-[350px]"
@@ -46,7 +46,7 @@ export default function NivelesPage() {
                     </div>
                     <div className="md:w-1/2 md:order-1">
                         <div className="flex items-center gap-3 mb-4">
-                            <BookOpen className="w-8 h-8 text-blue-600" />
+                            <BookOpen className="w-8 h-8 text-institutional" />
                             <h3 className="text-3xl font-bold text-gray-800">
                                 Enseñanza Básica
                             </h3>
@@ -88,19 +88,19 @@ export default function NivelesPage() {
                             </p>
                             <ul className="grid md:grid-cols-2 gap-2 text-sm text-gray-600">
                                 <li className="flex items-center gap-2">
-                                    <Check className="w-4 h-4 text-green-600 flex-shrink-0" />
+                                    <Check className="w-4 h-4 text-kombu flex-shrink-0" />
                                     Apoyo en aula común y aula de recursos.
                                 </li>
                                 <li className="flex items-center gap-2">
-                                    <Check className="w-4 h-4 text-green-600 flex-shrink-0" />
+                                    <Check className="w-4 h-4 text-kombu flex-shrink-0" />
                                     Adaptaciones curriculares personalizadas.
                                 </li>
                                 <li className="flex items-center gap-2">
-                                    <Check className="w-4 h-4 text-green-600 flex-shrink-0" />
+                                    <Check className="w-4 h-4 text-kombu flex-shrink-0" />
                                     Educadores Diferenciales y Psicólogos.
                                 </li>
                                 <li className="flex items-center gap-2">
-                                    <Check className="w-4 h-4 text-green-600 flex-shrink-0" />
+                                    <Check className="w-4 h-4 text-kombu flex-shrink-0" />
                                     Fonoaudiólogo para desarrollo del lenguaje.
                                 </li>
                             </ul>

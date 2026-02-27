@@ -17,7 +17,7 @@ const documentosInstitucionales = [
             "Identidad, misión, visión y principios que guían nuestro colegio.",
         url: "/documentos/proyecto-educativo.pdf",
         Icon: BookOpen,
-        color: "bg-green-100 text-green-700",
+        color: "bg-institutional text-white",
     },
     {
         nombre: "Reglamento Interno y Manual de Convivencia 2025",
@@ -25,7 +25,7 @@ const documentosInstitucionales = [
             "Normas de funcionamiento, derechos y deberes de la comunidad escolar.",
         url: "/documentos/reglamento-interno-2025.pdf",
         Icon: Shield,
-        color: "bg-blue-100 text-blue-700",
+        color: "bg-institutional text-white",
     },
     {
         nombre: "Reglamento de Convivencia Escolar",
@@ -33,7 +33,7 @@ const documentosInstitucionales = [
             "Protocolos y procedimientos para una sana convivencia.",
         url: "/documentos/reglamento-convivencia.pdf",
         Icon: Scale,
-        color: "bg-purple-100 text-purple-700",
+        color: "bg-institutional text-white",
     },
     {
         nombre: "Reglamento de Evaluación",
@@ -41,7 +41,7 @@ const documentosInstitucionales = [
             "Criterios y procedimientos de evaluación académica.",
         url: "/documentos/reglamento-evaluacion.pdf",
         Icon: ClipboardList,
-        color: "bg-amber-100 text-amber-700",
+        color: "bg-institutional text-white",
     },
     {
         nombre: "Reglamento de Evaluación y Promoción 2026",
@@ -49,7 +49,7 @@ const documentosInstitucionales = [
             "Normativa actualizada de evaluación y requisitos de promoción.",
         url: "/documentos/reglamento-evaluacion-promocion-2026.pdf",
         Icon: ClipboardList,
-        color: "bg-orange-100 text-orange-700",
+        color: "bg-institutional text-white",
     },
     {
         nombre: "PISE (Plan Integral de Seguridad Escolar) 2025",
@@ -57,7 +57,7 @@ const documentosInstitucionales = [
             "Protocolos de seguridad, evacuación y emergencias.",
         url: "/documentos/pise-2025.pdf",
         Icon: Shield,
-        color: "bg-red-100 text-red-700",
+        color: "bg-institutional text-white",
     },
 ];
 
@@ -157,7 +157,7 @@ export default function RecursosPage() {
                             rel="noopener noreferrer"
                             className="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all p-5 text-center group"
                         >
-                            <div className="w-12 h-12 bg-green-100 text-green-700 rounded-full mx-auto flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                            <div className="w-12 h-12 bg-cornsilk text-kombu-dark rounded-full mx-auto flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
                                 <Download className="w-5 h-5" />
                             </div>
                             <h4 className="font-bold text-gray-800 text-sm group-hover:text-[var(--accent)] transition-colors">
@@ -183,12 +183,12 @@ export default function RecursosPage() {
                         href="https://www.sistemadeadmisionescolar.cl/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-blue-50 border border-blue-200 rounded-xl p-5 hover:shadow-md transition group"
+                        className="bg-gray-50 border border-gray-200 rounded-xl p-5 hover:shadow-md transition group"
                     >
-                        <h4 className="font-bold text-blue-800 mb-1 group-hover:underline">
+                        <h4 className="font-bold text-gray-800 mb-1 group-hover:underline">
                             Sistema de Admisión Escolar (SAE)
                         </h4>
-                        <p className="text-sm text-blue-600">
+                        <p className="text-sm text-gray-600">
                             Plataforma oficial del Ministerio de Educación.
                         </p>
                     </a>
@@ -196,12 +196,12 @@ export default function RecursosPage() {
                         href="https://www.mineduc.cl/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-red-50 border border-red-200 rounded-xl p-5 hover:shadow-md transition group"
+                        className="bg-gray-50 border border-gray-200 rounded-xl p-5 hover:shadow-md transition group"
                     >
-                        <h4 className="font-bold text-red-800 mb-1 group-hover:underline">
+                        <h4 className="font-bold text-gray-800 mb-1 group-hover:underline">
                             Portal MINEDUC
                         </h4>
-                        <p className="text-sm text-red-600">
+                        <p className="text-sm text-gray-600">
                             Ministerio de Educación de Chile.
                         </p>
                     </a>
@@ -209,12 +209,12 @@ export default function RecursosPage() {
                         href="https://www.agenciaeducacion.cl/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-amber-50 border border-amber-200 rounded-xl p-5 hover:shadow-md transition group"
+                        className="bg-gray-50 border border-gray-200 rounded-xl p-5 hover:shadow-md transition group"
                     >
-                        <h4 className="font-bold text-amber-800 mb-1 group-hover:underline">
+                        <h4 className="font-bold text-gray-800 mb-1 group-hover:underline">
                             Agencia de Calidad
                         </h4>
-                        <p className="text-sm text-amber-600">
+                        <p className="text-sm text-gray-600">
                             Agencia de Calidad de la Educación.
                         </p>
                     </a>

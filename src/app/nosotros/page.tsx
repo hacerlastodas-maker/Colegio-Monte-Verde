@@ -39,7 +39,7 @@ export default function NosotrosPage() {
             {/* Misión y Visión */}
             <div className="grid md:grid-cols-2 gap-8 mb-16">
                 <div className="bg-white p-8 rounded-2xl border border-gray-100 shadow-lg">
-                    <div className="bg-green-100 w-12 h-12 rounded-full flex items-center justify-center text-green-700 mb-6">
+                    <div className="bg-institutional w-12 h-12 rounded-full flex items-center justify-center text-white mb-6">
                         <Award className="w-6 h-6" />
                     </div>
                     <h3 className="text-2xl font-bold text-gray-800 mb-4">
@@ -75,7 +75,7 @@ export default function NosotrosPage() {
                     </div>
                 </div>
                 <div className="bg-white p-8 rounded-2xl border border-gray-100 shadow-lg">
-                    <div className="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center text-blue-700 mb-6">
+                    <div className="bg-institutional w-12 h-12 rounded-full flex items-center justify-center text-white mb-6">
                         <Eye className="w-6 h-6" />
                     </div>
                     <h3 className="text-2xl font-bold text-gray-800 mb-4">
@@ -140,7 +140,7 @@ export default function NosotrosPage() {
             </div>
 
             {/* Infraestructura Inclusiva */}
-            <div className="bg-gray-50 rounded-2xl p-8 mb-16 border-l-4 border-green-500">
+            <div className="bg-gray-50 rounded-2xl p-8 mb-16 border-l-4 border-kombu">
                 <div className="flex flex-col md:flex-row gap-8 items-center">
                     <div className="md:w-1/2">
                         <h3 className="text-2xl font-bold text-gray-800 mb-4">
@@ -152,20 +152,20 @@ export default function NosotrosPage() {
                         </p>
                         <ul className="space-y-2 text-gray-700">
                             <li className="flex items-center gap-2">
-                                <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                                <CheckCircle className="w-5 h-5 text-kombu flex-shrink-0" />
                                 Rampas de acceso universal en todos los niveles.
                             </li>
                             <li className="flex items-center gap-2">
-                                <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                                <CheckCircle className="w-5 h-5 text-kombu flex-shrink-0" />
                                 Baños adaptados con normativa vigente.
                             </li>
                             <li className="flex items-center gap-2">
-                                <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                                <CheckCircle className="w-5 h-5 text-kombu flex-shrink-0" />
                                 Salas amplias, iluminadas y con calefacción
                                 eficiente.
                             </li>
                             <li className="flex items-center gap-2">
-                                <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                                <CheckCircle className="w-5 h-5 text-kombu flex-shrink-0" />
                                 Patios techados para recreo en invierno.
                             </li>
                         </ul>

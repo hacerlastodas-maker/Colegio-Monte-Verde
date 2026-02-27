@@ -18,7 +18,7 @@ export default function HomePage() {
             className="w-full h-full object-cover"
             alt="Banner Colegio Monte Verde"
           />
-          <div className="absolute inset-0 theme-bg-primary mix-blend-multiply opacity-80 transition-colors duration-500" />
+          <div className="absolute inset-0 theme-bg-secondary mix-blend-multiply opacity-70 transition-colors duration-500" />
         </div>
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
           {!themeData.decorationHidden && (
@@ -68,7 +68,7 @@ export default function HomePage() {
           <div className="grid md:grid-cols-3 gap-8">
             {/* Documentos */}
             <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition p-6 border border-gray-100 flex flex-col items-center text-center group">
-              <div className="p-4 rounded-full bg-blue-600 text-white mb-4 group-hover:scale-110 transition-transform">
+              <div className="p-4 rounded-full bg-kombu text-white mb-4 group-hover:scale-110 transition-transform">
                 <BookOpen className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-2">
@@ -79,7 +79,7 @@ export default function HomePage() {
               </p>
               <Link
                 href="/recursos"
-                className="px-6 py-2 rounded-lg font-medium text-white bg-blue-600 hover:bg-blue-700 transition inline-flex items-center"
+                className="px-6 py-2 rounded-lg font-medium text-white bg-kombu hover:bg-kombu-dark transition inline-flex items-center"
               >
                 Ver Recursos{" "}
                 <ExternalLink className="w-4 h-4 ml-2" />
@@ -88,7 +88,7 @@ export default function HomePage() {
 
             {/* YouTube */}
             <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition p-6 border border-gray-100 flex flex-col items-center text-center group">
-              <div className="p-4 rounded-full bg-red-600 text-white mb-4 group-hover:scale-110 transition-transform">
+              <div className="p-4 rounded-full bg-fawn-dark text-white mb-4 group-hover:scale-110 transition-transform">
                 <Video className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-2">
@@ -101,7 +101,7 @@ export default function HomePage() {
                 href="https://youtube.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-2 rounded-lg font-medium text-white bg-red-600 hover:bg-red-700 transition inline-flex items-center"
+                className="px-6 py-2 rounded-lg font-medium text-white bg-fawn-dark hover:bg-fawn transition inline-flex items-center"
               >
                 Ver YouTube <ExternalLink className="w-4 h-4 ml-2" />
               </a>
@@ -109,7 +109,7 @@ export default function HomePage() {
 
             {/* Instagram */}
             <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition p-6 border border-gray-100 flex flex-col items-center text-center group">
-              <div className="p-4 rounded-full bg-pink-600 text-white mb-4 group-hover:scale-110 transition-transform">
+              <div className="p-4 rounded-full bg-kombu-dark text-white mb-4 group-hover:scale-110 transition-transform">
                 <Instagram className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-2">
@@ -122,7 +122,7 @@ export default function HomePage() {
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-2 rounded-lg font-medium text-white bg-pink-600 hover:bg-pink-700 transition inline-flex items-center"
+                className="px-6 py-2 rounded-lg font-medium text-white bg-kombu-dark hover:bg-kombu transition inline-flex items-center"
               >
                 Ver Instagram <ExternalLink className="w-4 h-4 ml-2" />
               </a>

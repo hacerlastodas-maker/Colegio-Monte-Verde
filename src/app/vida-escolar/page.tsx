@@ -21,8 +21,8 @@ const workshops = [
         title: "Ajedrez",
         schedule: "Martes, 16:30 - 17:30",
         levels: "Pre-kinder a 8° Básico",
-        bgColor: "bg-amber-100",
-        textColor: "text-amber-700",
+        bgColor: "bg-institutional",
+        textColor: "text-white",
         iconName: "crown",
         Icon: Crown,
     },
@@ -30,8 +30,8 @@ const workshops = [
         title: "Fútbol",
         schedule: "Miércoles, 16:30 - 17:30",
         levels: "Kinder a 3° Básico",
-        bgColor: "bg-green-100",
-        textColor: "text-green-700",
+        bgColor: "bg-institutional",
+        textColor: "text-white",
         iconName: "trophy",
         Icon: Trophy,
     },
@@ -39,8 +39,8 @@ const workshops = [
         title: "Coro",
         schedule: "Miércoles, 16:15 - 17:00",
         levels: "3° a 8° Básico",
-        bgColor: "bg-purple-100",
-        textColor: "text-purple-700",
+        bgColor: "bg-institutional",
+        textColor: "text-white",
         iconName: "music",
         Icon: Music,
     },
@@ -48,8 +48,8 @@ const workshops = [
         title: "Instrumental",
         schedule: "Jueves, 16:15 - 17:00",
         levels: "5° a 8° Básico",
-        bgColor: "bg-indigo-100",
-        textColor: "text-indigo-700",
+        bgColor: "bg-institutional",
+        textColor: "text-white",
         iconName: "guitar",
         Icon: Guitar,
     },
@@ -57,8 +57,8 @@ const workshops = [
         title: "Básquetbol (G1)",
         schedule: "Viernes, 14:00 - 15:00",
         levels: "1° y 2° Básico",
-        bgColor: "bg-orange-100",
-        textColor: "text-orange-700",
+        bgColor: "bg-institutional",
+        textColor: "text-white",
         iconName: "dribbble",
         Icon: Dribbble,
     },
@@ -66,8 +66,8 @@ const workshops = [
         title: "Básquetbol (G2)",
         schedule: "Viernes, 15:30 - 17:30",
         levels: "3° a 6° Básico",
-        bgColor: "bg-red-100",
-        textColor: "text-red-700",
+        bgColor: "bg-institutional",
+        textColor: "text-white",
         iconName: "dribbble",
         Icon: Dribbble,
     },
@@ -89,7 +89,7 @@ export default function VidaEscolarPage() {
             {/* Talleres */}
             <div className="mb-16">
                 <h3 className="text-xl font-bold text-gray-800 mb-6 flex items-center gap-2 border-b pb-2">
-                    <Activity className="text-orange-500" /> Talleres
+                    <Activity className="text-institutional" /> Talleres
                     Extraescolares
                 </h3>
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -120,7 +120,7 @@ export default function VidaEscolarPage() {
                 {/* Menú de Casino */}
                 <div>
                     <h3 className="text-xl font-bold text-gray-800 mb-6 flex items-center gap-2 border-b pb-2">
-                        <Utensils className="text-red-500" /> Menú de Casino
+                        <Utensils className="text-institutional" /> Menú de Casino
                     </h3>
                     <div className="bg-white p-6 rounded-xl shadow border border-gray-100 text-center">
                         <div className="h-48 bg-gray-100 rounded-lg mb-4 flex items-center justify-center text-gray-400">
@@ -144,12 +144,12 @@ export default function VidaEscolarPage() {
                 {/* Uniforme Escolar */}
                 <div>
                     <h3 className="text-xl font-bold text-gray-800 mb-6 flex items-center gap-2 border-b pb-2">
-                        <Shirt className="text-blue-500" /> Uniforme Escolar
+                        <Shirt className="text-institutional" /> Uniforme Escolar
                     </h3>
                     <div className="bg-white p-6 rounded-xl shadow border border-gray-100">
                         <ul className="space-y-4 text-sm text-gray-700">
                             <li className="flex items-start gap-3">
-                                <div className="w-8 h-8 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center flex-shrink-0 font-bold">
+                                <div className="w-8 h-8 rounded-full bg-gray-100 text-gray-700 flex items-center justify-center flex-shrink-0 font-bold">
                                     L
                                 </div>
                                 <div>
@@ -160,7 +160,7 @@ export default function VidaEscolarPage() {
                                 </div>
                             </li>
                             <li className="flex items-start gap-3">
-                                <div className="w-8 h-8 rounded-full bg-green-100 text-green-600 flex items-center justify-center flex-shrink-0 font-bold">
+                                <div className="w-8 h-8 rounded-full bg-gray-100 text-gray-700 flex items-center justify-center flex-shrink-0 font-bold">
                                     V
                                 </div>
                                 <div>

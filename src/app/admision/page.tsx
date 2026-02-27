@@ -24,13 +24,13 @@ export default function AdmisionPage() {
             </h2>
 
             {/* SAE */}
-            <div className="bg-gradient-to-br from-blue-50 to-white shadow-md rounded-xl p-8 border border-blue-100 mb-8">
+            <div className="bg-gradient-to-br from-cornsilk to-white shadow-md rounded-xl p-8 border border-cornsilk mb-8">
                 <div className="flex flex-col md:flex-row gap-6 items-center">
-                    <div className="bg-blue-600 text-white p-4 rounded-full shadow-lg flex-shrink-0">
+                    <div className="bg-institutional text-white p-4 rounded-full shadow-lg flex-shrink-0">
                         <Users className="w-8 h-8" />
                     </div>
                     <div className="text-center md:text-left">
-                        <h3 className="text-2xl font-bold text-blue-900 mb-2">
+                        <h3 className="text-2xl font-bold text-institutional mb-2">
                             Sistema de Admisión Escolar (SAE)
                         </h3>
                         <p className="text-gray-600 mb-3">
@@ -48,7 +48,7 @@ export default function AdmisionPage() {
                             href="https://www.sistemadeadmisionescolar.cl/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-blue-600 font-bold hover:underline flex items-center justify-center md:justify-start gap-1"
+                            className="text-institutional font-bold hover:underline flex items-center justify-center md:justify-start gap-1"
                         >
                             Ir al sitio oficial SAE{" "}
                             <ExternalLink className="w-4 h-4" />
@@ -58,13 +58,13 @@ export default function AdmisionPage() {
             </div>
 
             {/* Programa de Becas */}
-            <div className="bg-gradient-to-br from-green-50 to-white shadow-md rounded-xl p-8 border border-green-100 mb-8">
+            <div className="bg-gradient-to-br from-cornsilk to-white shadow-md rounded-xl p-8 border border-cornsilk mb-8">
                 <div className="flex items-start gap-4 mb-6">
-                    <div className="bg-green-600 text-white p-3 rounded-full shadow-lg flex-shrink-0">
+                    <div className="bg-kombu text-white p-3 rounded-full shadow-lg flex-shrink-0">
                         <GraduationCap className="w-7 h-7" />
                     </div>
                     <div>
-                        <h3 className="text-2xl font-bold text-green-900 mb-2">
+                        <h3 className="text-2xl font-bold text-kombu-dark mb-2">
                             Programa de Becas de Financiamiento
                         </h3>
                         <p className="text-gray-600">
@@ -94,7 +94,7 @@ export default function AdmisionPage() {
                             key={i}
                             className="flex items-start gap-2 text-gray-700 text-sm"
                         >
-                            <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
+                            <CheckCircle className="w-4 h-4 text-kombu flex-shrink-0 mt-0.5" />
                             {r}
                         </li>
                     ))}
@@ -103,7 +103,7 @@ export default function AdmisionPage() {
                 <div className="grid sm:grid-cols-2 gap-4">
                     <div className="bg-white rounded-lg p-4 border border-gray-100">
                         <div className="flex items-center gap-2 mb-2">
-                            <CalendarDays className="w-4 h-4 text-green-600" />
+                            <CalendarDays className="w-4 h-4 text-kombu" />
                             <span className="font-bold text-sm text-gray-800">
                                 Periodo de Postulación
                             </span>
@@ -115,7 +115,7 @@ export default function AdmisionPage() {
                     </div>
                     <div className="bg-white rounded-lg p-4 border border-gray-100">
                         <div className="flex items-center gap-2 mb-2">
-                            <CalendarDays className="w-4 h-4 text-blue-600" />
+                            <CalendarDays className="w-4 h-4 text-institutional" />
                             <span className="font-bold text-sm text-gray-800">
                                 Plazos
                             </span>
@@ -210,12 +210,12 @@ export default function AdmisionPage() {
                     </a>
                     <Link
                         href="/utiles"
-                        className="flex justify-between items-center p-4 bg-green-50 rounded-lg hover:bg-green-100 transition border border-green-200"
+                        className="flex justify-between items-center p-4 bg-cornsilk rounded-lg hover:bg-fawn/20 transition border border-fawn/30"
                     >
-                        <span className="font-medium text-green-800">
+                        <span className="font-medium text-kombu-dark">
                             Listas de Útiles 2026 (por curso)
                         </span>
-                        <ExternalLink className="w-4 h-4 text-green-600 flex-shrink-0" />
+                        <ExternalLink className="w-4 h-4 text-kombu flex-shrink-0" />
                     </Link>
                 </div>
             </div>

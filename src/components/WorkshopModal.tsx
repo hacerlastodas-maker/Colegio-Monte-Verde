@@ -90,10 +90,10 @@ export default function WorkshopModal({
                         </div>
                     </div>
                     <a
-                        href={`https://wa.me/56912345678?text=${whatsappMsg}`}
+                        href={`https://wa.me/56963943314?text=${whatsappMsg}`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 rounded-xl flex items-center justify-center gap-2 transition shadow-lg hover:shadow-green-200"
+                        className="w-full bg-kombu hover:bg-kombu-dark text-white font-bold py-3 rounded-xl flex items-center justify-center gap-2 transition shadow-lg hover:shadow-kombu/40"
                     >
                         <MessageCircle className="w-5 h-5" />
                         Inscribir por WhatsApp

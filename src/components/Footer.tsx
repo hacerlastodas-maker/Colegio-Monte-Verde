@@ -1,6 +1,7 @@
 import Link from "next/link";
+import Image from "next/image";
 import GoogleMapsWidget from "@/components/GoogleMapsWidget";
-import { School, Instagram, Facebook, MapPin, Phone, Mail } from "lucide-react";
+import { Instagram, Facebook, MapPin, Phone, Mail } from "lucide-react";
 
 export default function Footer() {
     return (
@@ -9,7 +10,13 @@ export default function Footer() {
                 {/* Brand */}
                 <div className="col-span-1 md:col-span-1">
                     <div className="flex items-center gap-2 mb-4 text-white">
-                        <School className="w-5 h-5" />
+                        <Image
+                            src="/monteverde.png"
+                            width={40}
+                            height={40}
+                            alt="Logo Colegio Monte Verde"
+                            className="bg-white rounded-md p-1"
+                        />
                         <span className="font-bold text-lg uppercase">Monte Verde</span>
                     </div>
                     <p className="mb-6">
@@ -92,8 +99,8 @@ export default function Footer() {
                             </li>
                             <li className="flex items-center gap-2">
                                 <Phone className="theme-text-accent w-4 h-4 flex-shrink-0" />
-                                <a href="tel:+56652630000" className="hover:text-white transition">
-                                    +56 65 263 0000
+                                <a href="tel:+56963943314" className="hover:text-white transition">
+                                    +56 9 6394 3314
                                 </a>
                             </li>
                             <li className="flex items-center gap-2">

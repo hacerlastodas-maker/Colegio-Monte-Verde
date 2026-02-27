@@ -15,20 +15,20 @@ export default function UtilesPage() {
             <div className="flex justify-between items-center mb-8 print:hidden">
                 <Link
                     href="/admision"
-                    className="flex items-center text-gray-600 hover:text-green-700 transition"
+                    className="flex items-center text-gray-600 hover:text-kombu transition"
                 >
                     <ArrowLeft className="w-5 h-5 mr-1" /> Volver a Admisión
                 </Link>
                 <button
                     onClick={handlePrint}
-                    className="bg-green-600 text-white px-6 py-2 rounded-lg font-bold hover:bg-green-700 transition flex items-center gap-2 shadow-md"
+                    className="bg-kombu text-white px-6 py-2 rounded-lg font-bold hover:bg-kombu-dark transition flex items-center gap-2 shadow-md"
                 >
                     <Printer className="w-5 h-5" /> Imprimir Lista
                 </button>
             </div>
 
             {/* Print Header (Only visible when printing) */}
-            <div className="hidden print:block text-center mb-8 border-b-2 border-green-700 pb-4">
+            <div className="hidden print:block text-center mb-8 border-b-2 border-kombu pb-4">
                 <h1 className="text-3xl font-bold text-gray-900 uppercase tracking-widest">
                     Colegio Monte Verde
                 </h1>
@@ -50,8 +50,8 @@ export default function UtilesPage() {
                         key={list.grade}
                         className="bg-white p-8 rounded-xl shadow-lg border border-gray-100 print:shadow-none print:border print:border-gray-300 print:p-4 break-inside-avoid"
                     >
-                        <div className="flex items-center justify-between mb-6 border-b border-green-100 pb-2">
-                            <h2 className="text-2xl font-bold text-green-700 print:text-xl print:text-black">
+                        <div className="flex items-center justify-between mb-6 border-b border-fawn/30 pb-2">
+                            <h2 className="text-2xl font-bold text-kombu print:text-xl print:text-black">
                                 {list.grade}
                             </h2>
                             {list.pdfUrl && (
@@ -59,7 +59,7 @@ export default function UtilesPage() {
                                     href={list.pdfUrl}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="print:hidden flex items-center gap-2 bg-green-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-green-700 transition shadow-sm"
+                                    className="print:hidden flex items-center gap-2 bg-kombu text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-kombu-dark transition shadow-sm"
                                 >
                                     <Download className="w-4 h-4" />
                                     Descargar PDF
@@ -72,7 +72,7 @@ export default function UtilesPage() {
                                     key={idx}
                                     className="flex items-start gap-2 text-gray-700"
                                 >
-                                    <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5 print:text-black" />
+                                    <CheckCircle className="w-5 h-5 text-kombu flex-shrink-0 mt-0.5 print:text-black" />
                                     <span>{item}</span>
                                 </li>
                             ))}

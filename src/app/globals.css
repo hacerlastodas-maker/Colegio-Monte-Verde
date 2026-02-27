@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 :root {
-  --primary: #065f46;
-  --secondary: #059669;
-  --accent: #047857;
-  --button: #047857;
-  --button-hover: #064e3b;
+  --primary: #283618;
+  --secondary: #606c38;
+  --accent: #bc6c25;
+  --button: #bc6c25;
+  --button-hover: #dda15e;
 }
 
 @theme inline {
@@ -14,6 +14,12 @@
   --color-accent: var(--accent);
   --color-button: var(--button);
   --color-button-hover: var(--button-hover);
+  --color-kombu: #606c38;
+  --color-kombu-dark: #283618;
+  --color-cornsilk: #fefae0;
+  --color-fawn: #dda15e;
+  --color-fawn-dark: #bc6c25;
+  --color-institutional: #1B512C;
 }
 
 /* ===== Clases temáticas ===== */
