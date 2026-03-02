@@ -27,6 +27,8 @@ export async function POST(request: NextRequest) {
     }
 
     try {
+        // Revalidar la homepage (sección Últimas Noticias + Hero dinámico)
+        revalidatePath("/");
         // Revalidar el listado de noticias
         revalidatePath("/noticias");
         // Revalidar todas las páginas individuales de noticias
