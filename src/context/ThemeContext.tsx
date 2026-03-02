@@ -12,8 +12,7 @@ const themeData = {
   greeting: "Formando futuro desde el corazón de Chiloé",
   decoration: "",
   decorationHidden: true,
-  bannerSrc:
-    "https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+  bannerSrc: "/Hero-Monte-Verde.png",
 };
 
 interface ThemeContextValue {

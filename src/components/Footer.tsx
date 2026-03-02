@@ -65,6 +65,11 @@ export default function Footer() {
                             </Link>
                         </li>
                         <li>
+                            <Link href="/noticias" className="hover:text-white transition">
+                                Noticias
+                            </Link>
+                        </li>
+                        <li>
                             <Link href="/recursos" className="hover:text-white transition">
                                 Zona de Recursos
                             </Link>

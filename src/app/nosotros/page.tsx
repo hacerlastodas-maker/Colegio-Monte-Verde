@@ -9,6 +9,10 @@ import {
     GraduationCap,
     BookOpen,
     HandHelping,
+    Accessibility,
+    Bath,
+    Sun,
+    Umbrella,
 } from "lucide-react";
 
 const equipo = [
@@ -170,22 +174,31 @@ export default function NosotrosPage() {
                             </li>
                         </ul>
                     </div>
-                    <div className="md:w-1/2 grid grid-cols-2 gap-2">
-                        <img
-                            src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&q=80&w=400"
-                            className="rounded-lg shadow-sm h-32 w-full object-cover"
-                            alt="Infraestructura 1"
-                        />
-                        <img
-                            src="https://images.unsplash.com/photo-1592931136423-f323c21c78bb?auto=format&fit=crop&q=80&w=400"
-                            className="rounded-lg shadow-sm h-32 w-full object-cover"
-                            alt="Infraestructura 2"
-                        />
-                        <img
-                            src="https://images.unsplash.com/photo-1519452635265-7b1fbfd1e4e0?auto=format&fit=crop&q=80&w=400"
-                            className="rounded-lg shadow-sm h-32 w-full object-cover col-span-2"
-                            alt="Infraestructura 3"
-                        />
+                    <div className="md:w-1/2 grid grid-cols-2 gap-3">
+                        <div className="bg-white rounded-xl p-5 flex flex-col items-center text-center shadow-sm border border-gray-100">
+                            <div className="w-12 h-12 rounded-full bg-kombu/10 flex items-center justify-center mb-2">
+                                <Accessibility className="w-6 h-6 text-kombu" />
+                            </div>
+                            <span className="text-xs font-semibold text-gray-700">Rampas de Acceso</span>
+                        </div>
+                        <div className="bg-white rounded-xl p-5 flex flex-col items-center text-center shadow-sm border border-gray-100">
+                            <div className="w-12 h-12 rounded-full bg-kombu/10 flex items-center justify-center mb-2">
+                                <Bath className="w-6 h-6 text-kombu" />
+                            </div>
+                            <span className="text-xs font-semibold text-gray-700">Baños Adaptados</span>
+                        </div>
+                        <div className="bg-white rounded-xl p-5 flex flex-col items-center text-center shadow-sm border border-gray-100">
+                            <div className="w-12 h-12 rounded-full bg-kombu/10 flex items-center justify-center mb-2">
+                                <Sun className="w-6 h-6 text-kombu" />
+                            </div>
+                            <span className="text-xs font-semibold text-gray-700">Salas Iluminadas</span>
+                        </div>
+                        <div className="bg-white rounded-xl p-5 flex flex-col items-center text-center shadow-sm border border-gray-100">
+                            <div className="w-12 h-12 rounded-full bg-kombu/10 flex items-center justify-center mb-2">
+                                <Umbrella className="w-6 h-6 text-kombu" />
+                            </div>
+                            <span className="text-xs font-semibold text-gray-700">Patios Techados</span>
+                        </div>
                     </div>
                 </div>
             </div>

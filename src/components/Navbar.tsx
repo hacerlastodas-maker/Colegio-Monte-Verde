@@ -11,6 +11,7 @@ const links = [
     { href: "/nosotros", label: "Nosotros" },
     { href: "/niveles", label: "Niveles" },
     { href: "/vida-escolar", label: "Vida Escolar" },
+    { href: "/noticias", label: "Noticias" },
     { href: "/recursos", label: "Recursos" },
     { href: "/admision", label: "Admisión" },
 ];
