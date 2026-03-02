@@ -125,56 +125,12 @@ async function fetchSheetData(): Promise<SheetData> {
     }
 }
 
-// TODO: DEMO — Datos de ejemplo. Eliminar cuando el Google Sheet tenga datos reales.
-const SAMPLE_NOTICIAS: Noticia[] = [
-    {
-        slug: "inicio-ano-escolar-2026",
-        titulo: "Inicio Año Escolar 2026",
-        fecha: "03/03/2026",
-        contenido:
-            "Damos la más cálida bienvenida a todos nuestros alumnos, familias y equipo docente al nuevo año escolar 2026. Este año viene cargado de proyectos innovadores, talleres medioambientales y nuevas experiencias de aprendizaje que fortalecerán el desarrollo integral de nuestros estudiantes.\n\nEl acto de inauguración se realizó en el patio central del colegio, con la participación de toda la comunidad educativa. La directora, Diva Arce Orellana, destacó los logros del año anterior y presentó los principales desafíos para este período.\n\nEntre las novedades de este año se encuentran nuevos talleres de robótica educativa, un programa de huerto escolar ampliado y la incorporación de actividades de educación emocional en todos los niveles.",
-        imagenInicio:
-            "https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=800&q=80",
-        imagenFinal:
-            "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=800&q=80",
-        botonLink: "https://colegiomonteverde.cl",
-        botonTexto: "Ver Calendario Escolar",
-    },
-    {
-        slug: "taller-medio-ambiente-chiloe",
-        titulo: "Taller de Medio Ambiente: Descubriendo Chiloé",
-        fecha: "15/03/2026",
-        contenido:
-            "Nuestros alumnos de 5° a 8° básico participaron en un enriquecedor taller de educación ambiental enfocado en los ecosistemas únicos de Chiloé. La actividad incluyó una salida pedagógica al humedal cercano al colegio, donde los estudiantes pudieron observar aves nativas y aprender sobre la importancia de la conservación.\n\nEl taller fue dirigido por la profesora de ciencias junto a un biólogo marino invitado, quien compartió su experiencia investigando la biodiversidad del archipiélago. Los alumnos realizaron registros fotográficos y elaboraron informes que serán presentados en la feria científica escolar del próximo mes.",
-        imagenInicio:
-            "https://images.unsplash.com/photo-1500964757637-c85e8a162699?auto=format&fit=crop&w=800&q=80",
-        imagenFinal:
-            "https://images.unsplash.com/photo-1518173946687-a4c05826c9ec?auto=format&fit=crop&w=800&q=80",
-        botonLink: "",
-        botonTexto: "",
-    },
-    {
-        slug: "dia-convivencia-escolar",
-        titulo: "Día de la Convivencia Escolar",
-        fecha: "20/03/2026",
-        contenido:
-            "En el marco del Día de la Convivencia Escolar, nuestro colegio organizó una jornada especial con actividades recreativas, dinámicas grupales y un conversatorio sobre respeto y tolerancia. Participaron alumnos de todos los niveles junto a sus profesores jefes.\n\nLa encargada de Convivencia Escolar, Virginia Serey Ampuero, lideró las actividades que incluyeron juegos cooperativos, creación de murales colectivos y la lectura del manifiesto de convivencia redactado por los propios estudiantes.\n\nLa jornada cerró con una presentación artística preparada por los alumnos de pre-kinder y kinder, quienes interpretaron canciones sobre la amistad y el compañerismo.",
-        imagenInicio:
-            "https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=800&q=80",
-        imagenFinal: "",
-        botonLink: "",
-        botonTexto: "",
-    },
-];
-
-
 /**
  * Obtiene todas las noticias del Google Sheet.
  */
 export async function fetchNoticias(): Promise<Noticia[]> {
     const { noticias } = await fetchSheetData();
-    // TODO: DEMO — Usar datos de ejemplo si el Sheet está vacío. Eliminar cuando haya datos reales.
-    return noticias.length > 0 ? noticias : SAMPLE_NOTICIAS;
+    return noticias;
 }
 
 /**
