@@ -12,7 +12,7 @@ export default function NivelesPage() {
                     <div className="md:w-1/2 relative">
                         <div className="absolute top-4 left-4 w-full h-full bg-institutional/20 rounded-2xl -z-10" />
                         <img
-                            src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?auto=format&fit=crop&q=80&w=800"
+                            src="/parvulo.jpg"
                             className="rounded-2xl shadow-xl w-full object-cover h-[350px]"
                             alt="Educación Parvularia"
                         />
@@ -39,7 +39,7 @@ export default function NivelesPage() {
                     <div className="md:w-1/2 md:order-2 relative">
                         <div className="absolute top-4 -right-4 w-full h-full bg-institutional/20 rounded-2xl -z-10" />
                         <img
-                            src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&q=80&w=800"
+                            src="/basica.jpg"
                             className="rounded-2xl shadow-xl w-full object-cover h-[350px]"
                             alt="Enseñanza Básica"
                         />

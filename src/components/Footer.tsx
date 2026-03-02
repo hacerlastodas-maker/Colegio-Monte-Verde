@@ -111,10 +111,10 @@ export default function Footer() {
                             <li className="flex items-center gap-2">
                                 <Mail className="theme-text-accent w-4 h-4 flex-shrink-0" />
                                 <a
-                                    href="mailto:contacto@colegiomonteverde.cl"
+                                    href="mailto:colegiomonteverde@gmail.com"
                                     className="hover:text-white transition"
                                 >
-                                    contacto@colegiomonteverde.cl
+                                    colegiomonteverde@gmail.com
                                 </a>
                             </li>
                         </ul>
