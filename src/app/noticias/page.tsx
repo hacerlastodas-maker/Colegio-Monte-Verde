@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { fetchNoticias } from "@/lib/noticias";
 import { Calendar, Newspaper, ArrowRight } from "lucide-react";
+import MediaEmbed from "@/components/MediaEmbed";
 
 export const revalidate = 3600; // ISR: regenerar cada 1 hora
 
@@ -56,21 +57,12 @@ export default async function NoticiasPage() {
                                 href={`/noticias/${noticia.slug}`}
                                 className="group bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col"
                             >
-                                {/* Imagen miniatura */}
-                                {noticia.imagenInicio ? (
-                                    <div className="relative aspect-[16/10] overflow-hidden bg-gray-100">
-                                        <img
-                                            src={noticia.imagenInicio}
-                                            alt={noticia.titulo}
-                                            loading="lazy"
-                                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                                        />
-                                    </div>
-                                ) : (
-                                    <div className="aspect-[16/10] bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center">
-                                        <Newspaper className="w-12 h-12 text-gray-200" />
-                                    </div>
-                                )}
+                                {/* Imagen o Video miniatura */}
+                                <MediaEmbed
+                                    src={noticia.imagenInicio}
+                                    alt={noticia.titulo}
+                                    variant="card"
+                                />
 
                                 {/* Contenido de la tarjeta */}
                                 <div className="p-5 md:p-6 flex flex-col flex-grow">

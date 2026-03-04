@@ -10,6 +10,7 @@ import {
     ExternalLink,
     Share2,
 } from "lucide-react";
+import MediaEmbed from "@/components/MediaEmbed";
 import type { Metadata } from "next";
 
 export const revalidate = 3600; // ISR: regenerar cada 1 hora
@@ -96,16 +97,14 @@ export default async function NoticiaDetailPage({ params }: PageProps) {
                     )}
                 </header>
 
-                {/* Imagen de inicio */}
+                {/* Imagen o Video de inicio */}
                 {noticia.imagenInicio && (
-                    <div className="mb-8 md:mb-10 rounded-2xl overflow-hidden shadow-lg">
-                        <img
-                            src={noticia.imagenInicio}
-                            alt={noticia.titulo}
-                            loading="eager"
-                            className="w-full h-auto max-h-[500px] object-cover"
-                        />
-                    </div>
+                    <MediaEmbed
+                        src={noticia.imagenInicio}
+                        alt={noticia.titulo}
+                        variant="detail"
+                        loading="eager"
+                    />
                 )}
 
                 {/* Cuerpo del artículo */}
@@ -113,16 +112,13 @@ export default async function NoticiaDetailPage({ params }: PageProps) {
                     {noticia.contenido}
                 </div>
 
-                {/* Imagen final */}
+                {/* Imagen o Video final */}
                 {noticia.imagenFinal && (
-                    <div className="mb-10 md:mb-12 rounded-2xl overflow-hidden shadow-lg">
-                        <img
-                            src={noticia.imagenFinal}
-                            alt={`${noticia.titulo} - imagen adicional`}
-                            loading="lazy"
-                            className="w-full h-auto max-h-[500px] object-cover"
-                        />
-                    </div>
+                    <MediaEmbed
+                        src={noticia.imagenFinal}
+                        alt={`${noticia.titulo} - imagen adicional`}
+                        variant="detail"
+                    />
                 )}
 
                 {/* Botón de acción personalizado (desde el Sheet) */}
