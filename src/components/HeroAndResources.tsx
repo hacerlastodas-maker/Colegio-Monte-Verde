@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { BookOpen, Video, Instagram, ExternalLink } from "lucide-react";
+import { BookOpen, Video, Facebook, ExternalLink } from "lucide-react";
 import { useTheme } from "@/context/ThemeContext";
 import type { HeroConfig } from "@/lib/noticias";
 
@@ -126,24 +126,24 @@ export default function HeroAndResources({
                             </a>
                         </div>
 
-                        {/* Instagram */}
+                        {/* Facebook */}
                         <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition p-6 border border-gray-100 flex flex-col items-center text-center group">
                             <div className="p-4 rounded-full bg-kombu-dark text-white mb-4 group-hover:scale-110 transition-transform">
-                                <Instagram className="w-8 h-8" />
+                                <Facebook className="w-8 h-8" />
                             </div>
                             <h3 className="text-xl font-bold text-gray-800 mb-2">
-                                Galería al Día
+                                Facebook Oficial
                             </h3>
                             <p className="text-gray-600 text-sm mb-6 flex-grow">
-                                La bitácora diaria de nuestro colegio en fotos.
+                                La bitácora diaria de nuestro colegio en fotos y noticias.
                             </p>
                             <a
-                                href="https://instagram.com"
+                                href="https://web.facebook.com/monteverdechiloe"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="px-6 py-2 rounded-lg font-medium text-white bg-kombu-dark hover:bg-kombu transition inline-flex items-center"
                             >
-                                Ver Instagram <ExternalLink className="w-4 h-4 ml-2" />
+                                Ver Facebook <ExternalLink className="w-4 h-4 ml-2" />
                             </a>
                         </div>
                     </div>

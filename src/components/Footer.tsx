@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import GoogleMapsWidget from "@/components/GoogleMapsWidget";
-import { Instagram, Facebook, MapPin, Phone, Mail } from "lucide-react";
+import { Facebook, MapPin, Phone, Mail } from "lucide-react";
 
 export default function Footer() {
     return (
@@ -25,15 +25,7 @@ export default function Footer() {
                     </p>
                     <div className="flex gap-4">
                         <a
-                            href="https://www.instagram.com/colegiomonteverdechiloe/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="w-8 h-8 rounded bg-gray-800 flex items-center justify-center hover:bg-pink-600 transition cursor-pointer"
-                        >
-                            <Instagram className="w-4 h-4 text-white" />
-                        </a>
-                        <a
-                            href="https://www.facebook.com/colegiomonteverdechiloe"
+                            href="https://web.facebook.com/monteverdechiloe"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="w-8 h-8 rounded bg-gray-800 flex items-center justify-center hover:bg-blue-600 transition cursor-pointer"

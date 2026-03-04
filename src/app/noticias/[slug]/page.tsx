@@ -6,7 +6,6 @@ import {
     ChevronRight,
     ArrowLeft,
     Facebook,
-    Instagram,
     ExternalLink,
     Share2,
 } from "lucide-react";
@@ -154,16 +153,7 @@ export default async function NoticiaDetailPage({ params }: PageProps) {
                                 <Facebook className="w-4 h-4" />
                                 Facebook
                             </a>
-                            <a
-                                href="https://www.instagram.com/colegiomonteverdechiloe/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-gradient-to-r from-[#833AB4] via-[#FD1D1D] to-[#F77737] text-white text-sm font-medium hover:opacity-90 transition shadow-sm"
-                                aria-label="Visitar Instagram"
-                            >
-                                <Instagram className="w-4 h-4" />
-                                Instagram
-                            </a>
+
                         </div>
                     </div>
                 </div>
