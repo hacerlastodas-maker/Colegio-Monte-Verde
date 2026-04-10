@@ -122,12 +122,12 @@ export default function Footer() {
                 <p>
                     Desarrollado por{" "}
                     <a
-                        href="https://hacerlastodas.com"
+                        href="https://darw.cl"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-gray-300 hover:text-white transition font-medium"
                     >
-                        hacerlastodas.com
+                        darw.cl
                     </a>
                 </p>
             </div>
