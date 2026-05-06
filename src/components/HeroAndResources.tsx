@@ -11,7 +11,7 @@ export default function HeroAndResources({
     heroConfig?: HeroConfig;
 }) {
     const { themeData } = useTheme();
-    const bannerSrc = heroConfig?.image || themeData.bannerSrc;
+    const bannerSrc = "/Hero-Monte-Verde.png";
     const filterActive = heroConfig?.filterActive ?? true;
     const filterColor = heroConfig?.filterColor || "";
 
