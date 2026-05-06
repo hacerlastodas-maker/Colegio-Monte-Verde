@@ -7,9 +7,21 @@ import WhatsAppWidget from "@/components/WhatsAppWidget";
 import { ThemeProvider } from "@/context/ThemeContext";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://monteverdechiloe.cl"),
   title: "Colegio Monte Verde - Castro, Chiloé",
   description:
     "Formando futuro desde el corazón de Chiloé. Colegio Monte Verde, Castro.",
+  openGraph: {
+    title: "Colegio Monte Verde - Castro, Chiloé",
+    description: "Formando futuro desde el corazón de Chiloé. Colegio Monte Verde, Castro.",
+    url: "https://monteverdechiloe.cl",
+    siteName: "Colegio Monte Verde",
+    locale: "es_CL",
+    type: "website",
+  },
+  alternates: {
+    canonical: "/",
+  },
 };
 
 export default function RootLayout({
