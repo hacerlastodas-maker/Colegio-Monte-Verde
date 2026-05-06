@@ -1,7 +1,16 @@
 import { MetadataRoute } from 'next'
- 
-export default function sitemap(): MetadataRoute.Sitemap {
+import { fetchNoticias } from '@/lib/noticias'
+
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = 'https://monteverdechiloe.cl'
+
+  const noticias = await fetchNoticias()
+  const noticiasUrls: MetadataRoute.Sitemap = noticias.map((noticia) => ({
+    url: `${baseUrl}/noticias/${noticia.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.6,
+  }))
 
   return [
     {
@@ -40,6 +49,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly',
       priority: 0.7,
     },
+    ...noticiasUrls,
     {
       url: `${baseUrl}/utiles`,
       lastModified: new Date(),

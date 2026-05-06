@@ -18,10 +18,10 @@ export default function TrabajaPage() {
                     Envía tu CV y antecedentes al correo:
                 </p>
                 <a
-                    href="mailto:rrhh@colegiomonteverde.cl"
+                    href="mailto:colegiomonteverde@gmail.com"
                     className="text-2xl font-bold theme-text-accent hover:underline break-all"
                 >
-                    rrhh@colegiomonteverde.cl
+                    colegiomonteverde@gmail.com
                 </a>
                 <p className="text-xs text-gray-500 mt-4">
                     Indica en el asunto el cargo al que postulas.
